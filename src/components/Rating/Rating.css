@@ -1,0 +1,9 @@
+.rating {
+  width: 200px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.filled {
+  color: rgb(233, 63, 63);
+}

@@ -1,0 +1,62 @@
+.productlist img {
+  width: 300px;
+  height: 250px;
+  border: 2px solid black;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+.productlist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+.productlist img:hover {
+  transform: scale(1.1);
+}
+.products-container {
+  display: flex;
+  position: relative;
+  top: 150px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.productcard {
+  width: 400px;
+  min-width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.productcard h2 {
+  font-size: 30px;
+}
+
+.liked {
+  /* Styling for when the product is liked */
+  background-color: rgb(143, 47, 47); /* Example */
+}
+.productcard button .like {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+  position: relative;
+  top: 0px;
+  border: none;
+}
+.productcard button {
+  border: none;
+  background-color: transparent;
+}
+.productcard button .dislike {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+  position: relative;
+  top: 0px;
+  border: none;
+}
