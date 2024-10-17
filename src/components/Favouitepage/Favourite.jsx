@@ -1,5 +1,6 @@
 import React, { useEffect, useReducer, useState } from 'react'
 import { initialstate, productReducer } from '../Reducers/Productreducer'
+import './Favourite.css'
 
 export const Favourite = () => {
   const getInitialState = () => ({
@@ -18,11 +19,7 @@ export const Favourite = () => {
         JSON.parse(localStorage.getItem('favourite')) || []
       setFavourites(updatedFavourites)
     }
-
-    // Add an event listener to listen for storage changes
     window.addEventListener('storage', updateFavourites)
-
-    // Cleanup on unmount
     return () => {
       window.removeEventListener('storage', updateFavourites)
     }

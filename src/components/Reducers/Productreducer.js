@@ -198,7 +198,6 @@ export const productReducer = (state, action) => {
         products: updatedProducts
       }
     }
-
     case 'Toggle_favorite':
       const UpdateProducts = state.products.map((product) =>
         product.id === action.payload.id

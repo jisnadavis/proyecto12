@@ -37,8 +37,7 @@
 }
 
 .liked {
-  /* Styling for when the product is liked */
-  background-color: rgb(143, 47, 47); /* Example */
+  background-color: rgb(143, 47, 47);
 }
 .productcard button .like {
   width: 100px;
